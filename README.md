@@ -8,7 +8,7 @@ Machine learning architectures: XGBoost, LSTM and a Transformer implemented from
 |LSTM|2837|3996|0.1091
 |Transformer| 2836|4079| 0.1112
 
-The following images show the forecasts of the models on unseen data. Please note that these graphs only show the first fortnight of the test set and therefore these aren't representative of the overall model performance. 
+The following images show the forecasts of the models on unseen data. Please note that these graphs only show the first fortnight of the test set (which spans 2 years) and therefore these aren't representative of the overall model performance. 
 
 <img width="3600" height="1500" alt="transformer_test_forecast" src="https://github.com/user-attachments/assets/c41e79f3-de62-40b0-ab31-9f7c66cdb1a7" />
 <img width="3600" height="1500" alt="lstm_test_forecast" src="https://github.com/user-attachments/assets/65829076-262d-45b2-bd30-bf511c05ccd7" />

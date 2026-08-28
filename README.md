@@ -15,7 +15,7 @@ The following images show the forecasts of the models on unseen data. Please not
 <img width="3600" height="1500" alt="xgboost_forecast" src="https://github.com/user-attachments/assets/b3709b07-a6a5-4772-9e07-09ddc50cd226" />
 <img width="3600" height="1500" alt="seasonal_baseline_forecast" src="https://github.com/user-attachments/assets/fc8f1f94-bc82-4c17-92ce-3e547d724528" />
 
-As an extension Transformer was modified to do probabilistic forecasting. A pinball loss function was used.
+The Transformer was modified to do probabilistic forecasting. A pinball loss function was used.
 
 <img width="3600" height="1500" alt="transformer_test_forecast" src="https://github.com/user-attachments/assets/9bb8f4fb-5d01-4610-84e8-c3610f262305" />
 

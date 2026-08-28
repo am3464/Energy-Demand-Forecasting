@@ -15,7 +15,7 @@ The following images show the forecasts of the models on unseen data. Please not
 <img width="3600" height="1500" alt="xgboost_forecast" src="https://github.com/user-attachments/assets/b3709b07-a6a5-4772-9e07-09ddc50cd226" />
 <img width="3600" height="1500" alt="seasonal_baseline_forecast" src="https://github.com/user-attachments/assets/fc8f1f94-bc82-4c17-92ce-3e547d724528" />
 
-Data, trained models and results have been excluded. Put the NESO CSV files in `data/raw/neso_data/` before running the scripts.
+Data, trained models and results have been excluded. Please put the NESO CSV files in `data/raw/neso_data/` before running the scripts.
 
 ## Setup
 

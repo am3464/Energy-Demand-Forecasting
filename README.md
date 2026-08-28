@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 ## Run scripts
 
-Run commands from the project root:
+Run these commands from the project root:
 
 ```bash
 python src/data_processing.py

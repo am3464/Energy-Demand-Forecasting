@@ -1,5 +1,5 @@
 # Energy-Demand-Forecasting
-Machine learning architectures (XGBoost, LSTM and Transformer) are compared against a seasonal baseline
+Machine learning architectures: XGBoost, LSTM and a Transformer implemented from scratch are compared against a seasonal baseline
 
 |Model|MAE /MW|RMSE /MW|MAPE|
 |---|---|---|---|

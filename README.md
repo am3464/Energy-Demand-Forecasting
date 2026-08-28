@@ -1,5 +1,5 @@
 # Energy-Demand-Forecasting
-Machine learning architectures: XGBoost, LSTM and a Transformer implemented from scratch are compared against a seasonal baseline
+Machine learning architectures: XGBoost, LSTM and a Transformer implemented from scratch are compared against a seasonal baseline. 
 
 |Model|MAE /MW|RMSE /MW|MAPE|
 |---|---|---|---|
@@ -14,6 +14,11 @@ The following images show the forecasts of the models on unseen data. Please not
 <img width="3600" height="1500" alt="lstm_test_forecast" src="https://github.com/user-attachments/assets/65829076-262d-45b2-bd30-bf511c05ccd7" />
 <img width="3600" height="1500" alt="xgboost_forecast" src="https://github.com/user-attachments/assets/b3709b07-a6a5-4772-9e07-09ddc50cd226" />
 <img width="3600" height="1500" alt="seasonal_baseline_forecast" src="https://github.com/user-attachments/assets/fc8f1f94-bc82-4c17-92ce-3e547d724528" />
+
+As an extension Transformer was modified to do probabilistic forecasting. A pinball loss function was used.
+
+<img width="3600" height="1500" alt="transformer_test_forecast" src="https://github.com/user-attachments/assets/9bb8f4fb-5d01-4610-84e8-c3610f262305" />
+
 
 Data, trained models and results have been excluded. Please put the NESO CSV files in `data/raw/neso_data/` before running the scripts.
 
@@ -36,7 +41,7 @@ python src/seasonal_baseline.py
 python src/XGBoost_model.py
 python src/LSTM.py
 python src/compare_LSTM_XGBoost.py
-python src/Transformer.py
+python src/Transformer_probabilistic.py
 python src/compare_Transformer_XGBoost.py
 ```
 

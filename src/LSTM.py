@@ -15,14 +15,11 @@ np.random.seed(RANDOM_SEED)
 tf.random.set_seed(RANDOM_SEED)
 
 def scale_data(train, val, test):
-    # Ensure any NaN values from feature engineering (e.g. shift) are dropped
     train = train.dropna().reset_index(drop=True)
     val = val.dropna().reset_index(drop=True)
     test = test.dropna().reset_index(drop=True)
 
     f_columns = ['SETTLEMENT_PERIOD', 'Month', 'Month_Sin', 'Month_Cos', 'Year', 'Is_Weekend']
-
-    # Convert columns to float
     for df in [train, val, test]:
         df[f_columns] = df[f_columns].astype(float)
         df['ND'] = df['ND'].astype(float)
@@ -90,11 +87,8 @@ def LSTM_model(number_of_features):
     return model
 
 def main():
-    # Run scaling
     scale_data(pd.read_csv(PROCESSED_DATA_DIR / "train_sb.csv"), pd.read_csv(PROCESSED_DATA_DIR / "validation_sb.csv"), pd.read_csv(PROCESSED_DATA_DIR / "test_sb.csv"))
     Xs_train, ys_train, Xs_val, ys_val = sequential_dataset()
-
-    # Diagnostic checks
     print("Xs_train NaNs:", np.isnan(Xs_train).sum())
     print("ys_train NaNs:", np.isnan(ys_train).sum())   
     model_current = LSTM_model(7)
